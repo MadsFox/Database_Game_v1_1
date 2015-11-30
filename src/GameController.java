@@ -35,10 +35,7 @@ public class GameController {
         while (e.hasMoreElements()){
             int id = (int) e.nextElement();
             Hashtable pieceData = (Hashtable) pieceList.get(id);
-            board.addPiece(id, pieceData);
+            board.addPiece(pieceData);
         }
-
     }
-
-
 }

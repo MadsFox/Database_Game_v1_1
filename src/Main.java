@@ -1,4 +1,4 @@
-
+//Mads: Lad os kalde klassen det spillet/programmet/projektet hedder
 public class Main {
 
     String version = "v1.1";
@@ -8,6 +8,7 @@ public class Main {
     GameController gameController; //Domain layer
     Database database; //Technical Layer
 
+    //Mads: Hvorfor en metode der hedder main? Lad os bare skrive det her i psvm metoden.
     public Main() {
         //Opret databasse
         this.database = createDatabase();

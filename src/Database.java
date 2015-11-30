@@ -100,6 +100,7 @@ public class Database {
                         int pieceMoveable = pieceRow.getInt("moveable");
 
                         Hashtable row = new Hashtable<>();
+                        row.put("id", pieceId);
                         row.put("x", pieceX);
                         row.put("y", pieceY);
                         row.put("z", pieceZ);

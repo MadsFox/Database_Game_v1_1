@@ -20,10 +20,11 @@ public class Board {
         this.depth = (int) boardData.get("depth");
     }
 
-    public void addPiece(int id, Hashtable pieceData) {
-        System.out.println("Board modtog følgende data fra Piece " + id + ": " + pieceData);
+    public void addPiece(Hashtable pieceData) {
+        System.out.println("Board modtog følgende data fra Piece: " + pieceData);
 
         //Vi har id i constructor
+        int id = (int) pieceData.get("id");
         int x = (int) pieceData.get("x");
         int y = (int) pieceData.get("y");
         int z = (int) pieceData.get("z");

@@ -4,7 +4,7 @@ public class Piece {
 
     //Informationer om denne Piece
     int id;
-    int health = 100;
+    int health;
     int x;
     int y;
     int z;
